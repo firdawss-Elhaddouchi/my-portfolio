@@ -12,7 +12,7 @@ export const projectsData = [
         tags: ['Kafka', 'Flink', 'Spark', 'Docker'],
         code: 'https://github.com/firdawss-Elhaddouchi/', 
         demo: 'https://github.com/firdawss-Elhaddouchi/',
-        image: one 
+        image: six 
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ export const projectsData = [
         tags: ['HDFS', 'Trino', 'PostgreSQL', 'Docker'],
         code: 'https://github.com/amina-dourdi/batch-procurement-data-pipeline',
         demo: 'https://github.com/amina-dourdi/batch-procurement-data-pipeline',
-        image: two
+        image: one
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ export const projectsData = [
         tags: ['ETL', 'SQL', 'Data Warehousing', 'Medallion'],
         code: 'https://github.com/firdawss-Elhaddouchi/sql-data-warehouse-project',
         demo: 'https://github.com/firdawss-Elhaddouchi/sql-data-warehouse-project',
-        image: three
+        image: two
     },
     {
         id: 4,
@@ -39,7 +39,7 @@ export const projectsData = [
         tags: ['Oracle SQL', 'PL/SQL', 'Performance Tuning'],
         code: 'https://github.com/firdawss-Elhaddouchi/Views_Optimization_Project',
         demo: 'https://github.com/firdawss-Elhaddouchi/Views_Optimization_Project',
-        image: four
+        image: three
     },
     {
         id: 5,
@@ -48,7 +48,7 @@ export const projectsData = [
         tags: ['Machine Learning', 'Python', 'Scikit-Learn', 'Regression'],
         code: 'https://github.com/firdawss-Elhaddouchi/End-to-End-ML-House-Prices',
         demo: 'https://github.com/firdawss-Elhaddouchi/End-to-End-ML-House-Prices',
-        image: five
+        image: four
     },
     {
         id: 6,
@@ -57,6 +57,6 @@ export const projectsData = [
         tags: ['PHP', 'Python', 'MySQL', 'Pandas'],
         code: 'https://github.com/firdawss-Elhaddouchi/medicare-analytics-system',
         demo: 'https://github.com/firdawss-Elhaddouchi/medicare-analytics-system',
-        image: six
+        image: five
     }
 ]

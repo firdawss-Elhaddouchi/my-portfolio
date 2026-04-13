@@ -7,6 +7,15 @@ import five from '../assets/svg/projects/five.svg'
 export const projectsData = [
     {
         id: 1,
+        projectName: 'TaaSim: Smart Urban Mobility',
+        projectDesc: 'A real-time data platform for Casablanca urban mobility, utilizing Kafka and Flink for stream processing of GPS flows and trip requests.',
+        tags: ['Kafka', 'Flink', 'Spark', 'Docker'],
+        code: 'https://github.com/firdawss-Elhaddouchi/', 
+        demo: 'https://github.com/firdawss-Elhaddouchi/',
+        image: one 
+    },
+    {
+        id: 1,
         projectName: 'Batch Procurement Data Pipeline',
         projectDesc: 'Automated supply chain flows using a hybrid architecture of Hadoop HDFS and PostgreSQL, with Trino as a unified query engine for distributed data.',
         tags: ['HDFS', 'Trino', 'PostgreSQL', 'Docker'],

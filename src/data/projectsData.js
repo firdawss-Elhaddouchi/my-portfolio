@@ -7,6 +7,15 @@ import six from '../assets/svg/projects/six.svg'
 import seven from '../assets/svg/projects/seven.svg'
 export const projectsData = [
     {
+        id: 7,
+        projectName: 'JobIntelligent: AI Data Platform',
+        projectDesc: 'End-to-End platform using Medallion Architecture and NLP to analyze the job market, extract skills from CVs, and provide AI-driven recommendations.',
+        tags: ['FastAPI', 'Airflow', 'NLP', 'Medallion', 'Docker'],
+        code: 'https://github.com/firdawss-Elhaddouchi/JobIntelligent-Data-Platform',
+        demo: 'https://github.com/firdawss-Elhaddouchi/JobIntelligent-Data-Platform',
+        image: seven 
+    },
+    {
         id: 1,
         projectName: 'TaaSim: Smart Urban Mobility',
         projectDesc: 'A real-time data platform for Casablanca urban mobility, utilizing Kafka and Flink for stream processing of GPS flows and trip requests.',
@@ -59,14 +68,5 @@ export const projectsData = [
         code: 'https://github.com/firdawss-Elhaddouchi/medicare-analytics-system',
         demo: 'https://github.com/firdawss-Elhaddouchi/medicare-analytics-system',
         image: five
-    },
-    {
-    id: 7,
-    projectName: 'JobIntelligent: AI Data Platform',
-    projectDesc: 'End-to-End platform using Medallion Architecture and NLP to analyze the job market, extract skills from CVs, and provide AI-driven recommendations.',
-    tags: ['FastAPI', 'Airflow', 'NLP', 'Medallion', 'Docker'],
-    code: 'https://github.com/firdawss-Elhaddouchi/JobIntelligent-Data-Platform',
-    demo: 'https://github.com/firdawss-Elhaddouchi/JobIntelligent-Data-Platform',
-    image: seven 
-},
+    } 
 ]

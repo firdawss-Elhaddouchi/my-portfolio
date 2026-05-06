@@ -4,6 +4,7 @@ import three from '../assets/svg/projects/three.svg'
 import four from '../assets/svg/projects/four.svg'
 import five from '../assets/svg/projects/five.svg'
 import six from '../assets/svg/projects/six.svg'
+import seven from '../assets/svg/projects/seven.svg'
 export const projectsData = [
     {
         id: 1,
@@ -58,5 +59,14 @@ export const projectsData = [
         code: 'https://github.com/firdawss-Elhaddouchi/medicare-analytics-system',
         demo: 'https://github.com/firdawss-Elhaddouchi/medicare-analytics-system',
         image: five
-    }
+    },
+    {
+    id: 7,
+    projectName: 'JobIntelligent: AI Data Platform',
+    projectDesc: 'End-to-End platform using Medallion Architecture and NLP to analyze the job market, extract skills from CVs, and provide AI-driven recommendations.',
+    tags: ['FastAPI', 'Airflow', 'NLP', 'Medallion', 'Docker'],
+    code: 'https://github.com/firdawss-Elhaddouchi/JobIntelligent-Data-Platform',
+    demo: 'https://github.com/firdawss-Elhaddouchi/JobIntelligent-Data-Platform',
+    image: seven 
+},
 ]

@@ -1,17 +1,66 @@
 export const skillsData = [
     'Python',
-    'Java',
     'Docker',
     'PostgreSQL',
     'MySQL',
     'Git',
-    'HTML',
-    'CSS',
+    'React',
     'Javascript',
+    'Typescript',
+    'PHP',
     'Numpy',
-    'Microsoft Office'
-]
+    'OpenCV',
+    'MongoDB'
+    ]
 
+// export const skillsData = [
+//     'Python',
+//     'Docker',
+//     'PostgreSQL',
+//     'MySQL',
+//     'Git',
+//     'React',
+//     'Javascript',
+//     'Numpy',
+//     'PHP'
+// ];
+
+export const technicalSkillsData = [
+    {
+        id: 1,
+        title: 'Data Engineering & Big Data',
+        skills: [
+            'Apache Spark',
+            'Apache Kafka',
+            'Apache Flink',
+            'Apache Airflow',
+            'MinIO',
+            'Apache Cassandra'
+        ]
+    },
+    {
+        id: 2,
+        title: 'AI & Machine Learning',
+        skills: [
+            'Machine Learning',
+            'Scikit-learn',
+            'NLP',
+            'RAG',
+            'Sentence Transformers',
+            'ChromaDB'
+        ]
+    },
+    {
+        id: 3,
+        title: 'Backend & Business Intelligence',
+        skills: [
+            'FastAPI',
+            'Power BI',
+            'SQL',
+            'Pandas'
+        ]
+    }
+];
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
 // Couldn't find the required skills? Raise an issue on github at https://github.com/hhhrrrttt222111/developer-portfolio/issues/new
 

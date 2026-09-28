@@ -1,4 +1,5 @@
 export const educationData = [
+
     {
         id: 1,
         institution: 'National School of Applied Sciences (ENSA), Al Hoceima',
@@ -6,18 +7,29 @@ export const educationData = [
         startYear: '2024',
         endYear: 'Present'
     },
+
     {
         id: 2,
         institution: 'National School of Applied Sciences (ENSA), Al Hoceima',
         course: 'Integrated Preparatory Classes (Cycle Préparatoire)',
+        startYear: '2023',
+        endYear: '2024'
+    },
+
+    {
+        id: 3,
+        institution: 'Faculty of Sciences and Techniques of Al Hoceima (FSTH)',
+        course: 'MIP – Mathematics, Computer Science and Physics',
         startYear: '2022',
         endYear: '2023'
     },
+
     {
-        id: 3,
+        id: 4,
         institution: 'Ibn Hazm Qualifying High School, Al Hoceima',
         course: 'Baccalaureate in Physics and Chemistry',
         startYear: '2021',
         endYear: '2022'
     },
+
 ]

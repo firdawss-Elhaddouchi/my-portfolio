@@ -6,9 +6,10 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 
 import { AiOutlineFolder } from "react-icons/ai";
 
+import CertificatePreview from '../CertificatePreview/CertificatePreview';
 import './Achievement.css'
 
-function AchievementCard({id, title, details, date, field, image}) {
+function AchievementCard({id, title, details, date, field, image, certificate}) {
 
     const { theme } = useContext(ThemeContext);
 
@@ -39,7 +40,13 @@ function AchievementCard({id, title, details, date, field, image}) {
                     </div>
                 </div> 
                 <div className="achievecard-imgcontainer">
-                    <img src={image} alt="" />
+                    {certificate ? (
+                        <CertificatePreview image={image} title={title}
+                            label={`Enlarge certificate: ${title}`}
+                            className="achievement-certificate">
+                            <img src={image} alt="" loading="lazy" />
+                        </CertificatePreview>
+                    ) : <img src={image} alt="" loading="lazy" />}
                 </div>
            </div>
         </Fade>

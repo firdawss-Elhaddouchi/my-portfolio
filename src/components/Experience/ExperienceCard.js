@@ -7,9 +7,10 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 import expImgWhite from '../../assets/svg/experience/expImgWhite.svg'
 import expImgBlack from '../../assets/svg/experience/expImgBlack.svg'
 
+import CertificatePreview from '../CertificatePreview/CertificatePreview';
 import './Experience.css'
 
-function ExperienceCard({id, company, jobtitle, startYear, endYear}) {
+function ExperienceCard({id, company, jobtitle, startYear, endYear, certificate}) {
 
     const { theme } = useContext(ThemeContext);
 
@@ -35,6 +36,13 @@ function ExperienceCard({id, company, jobtitle, startYear, endYear}) {
                     <h6 style={{color: theme.primary}}>{startYear}-{endYear}</h6>
                     <h4 style={{color: theme.tertiary}}>{jobtitle}</h4>
                     <h5 style={{color: theme.tertiary80}}>{company}</h5>
+                    {certificate && (
+                        <CertificatePreview image={certificate}
+                            title={`Internship certificate — ${company}`}
+                            label="View certificate"
+                            className="experience-certificate"
+                            style={{color: theme.tertiary, borderColor: theme.primary}} />
+                    )}
                 </div>
             </div>
         </Fade>   

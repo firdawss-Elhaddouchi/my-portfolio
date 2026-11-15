@@ -12,7 +12,7 @@ export const testimonialsData = [
     },
     {
         id: 2,
-        name: 'El Ghalbouni Oumaima',
+        name: 'Oumaima El Ghalbouni',
         title: 'Data Engineering Student',
         text: "I see this project as an amazing experience where we applied what we learned and explored new tools like Trino. It was a great experience working on it together!",
         image: girl2

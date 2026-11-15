@@ -10,6 +10,7 @@ export const achievementData = {
             details : 'Gained hands-on experience in containerizing applications and managing images/containers for scalable deployments through DataCamp.',
             date : '2026',
             field : 'DevOps',
+            certificate: true,
             image : dockerCert
         },
         {
@@ -18,6 +19,7 @@ export const achievementData = {
             details : 'Built and evaluated predictive models using regression and classification algorithms for data-driven insights on DataCamp.',
             date : '2025',
             field : 'Machine Learning',
+            certificate: true,
             image : scikitCert
         },
         {
@@ -26,6 +28,7 @@ export const achievementData = {
             details : 'Mastered foundational AI concepts, ethics, and their practical applications in business and technology via DataCamp.',
             date : '2025',
             field : 'Artificial Intelligence',
+            certificate: true,
             image : aiCert
         },
         {

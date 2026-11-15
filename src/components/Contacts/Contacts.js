@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { Snackbar, IconButton, SnackbarContent } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
-import axios from 'axios';
 import isEmail from 'validator/lib/isEmail';
 import { makeStyles } from '@material-ui/core/styles';
 import {
@@ -34,7 +33,7 @@ function Contacts() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    const [success, setSuccess] = useState(false);
+    const [draftOpened, setDraftOpened] = useState(false);
     const [errMsg, setErrMsg] = useState('');
 
     const { theme } = useContext(ThemeContext);
@@ -134,22 +133,12 @@ function Contacts() {
 
         if (name && email && message) {
             if (isEmail(email)) {
-                const responseData = {
-                    name: name,
-                    email: email,
-                    message: message,
-                };
-
-                axios.post(contactsData.sheetAPI, responseData).then((res) => {
-                    console.log('success');
-                    setSuccess(true);
-                    setErrMsg('');
-
-                    setName('');
-                    setEmail('');
-                    setMessage('');
-                    setOpen(false);
-                });
+                const subject = encodeURIComponent(`Portfolio inquiry from ${name}`);
+                const body = encodeURIComponent(`From: ${name} (${email})\r\n\r\n${message}`);
+                window.location.href = `mailto:${contactsData.email}?subject=${subject}&body=${body}`;
+                setDraftOpened(true);
+                setErrMsg('Send the draft from your email app.');
+                setOpen(true);
             } else {
                 setErrMsg('Invalid email');
                 setOpen(true);
@@ -222,15 +211,15 @@ function Contacts() {
                                     type='submit'
                                     className={classes.submitBtn}
                                 >
-                                    <p>{!success ? 'Send' : 'Sent'}</p>
+                                    <p>{!draftOpened ? 'Open email draft' : 'Open draft again'}</p>
                                     <div className='submit-icon'>
                                         <AiOutlineSend
                                             className='send-icon'
                                             style={{
-                                                animation: !success
+                                                animation: !draftOpened
                                                     ? 'initial'
                                                     : 'fly 0.8s linear both',
-                                                position: success
+                                                position: draftOpened
                                                     ? 'absolute'
                                                     : 'initial',
                                             }}
@@ -238,10 +227,10 @@ function Contacts() {
                                         <AiOutlineCheckCircle
                                             className='success-icon'
                                             style={{
-                                                display: !success
+                                                display: !draftOpened
                                                     ? 'none'
                                                     : 'inline-flex',
-                                                opacity: !success ? '0' : '1',
+                                                opacity: !draftOpened ? '0' : '1',
                                             }}
                                         />
                                     </div>

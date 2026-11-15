@@ -108,7 +108,8 @@
     width: 23%;
 }
 
-.achievecard-imgcontainer > img {
+.achievecard-imgcontainer > img,
+.achievement-certificate > img {
     width: 150px;
     height: 130px;
     border-radius: 10px;
@@ -204,7 +205,8 @@
        justify-content: center;
     }
 
-    .achievecard-imgcontainer > img {
+    .achievecard-imgcontainer > img,
+.achievement-certificate > img {
         width: 80px;
         height: 70px;
     }
@@ -229,10 +231,24 @@
     .achievecard-details1 p {
         font-size: 0.95rem;
     }
-    .achievecard-imgcontainer > img {
+    .achievecard-imgcontainer > img,
+.achievement-certificate > img {
         width: 70px;
         height: 60px;
     }
 
 }
 
+
+.achievement-certificate {
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    cursor: zoom-in;
+}
+
+.achievement-certificate > img {
+    display: block;
+    object-fit: contain;
+}
